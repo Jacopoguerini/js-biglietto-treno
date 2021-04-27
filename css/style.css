@@ -1,0 +1,25 @@
+main {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+ul {
+    margin: 30px;
+}
+li {
+    margin: 10px 0;
+}
+li:not(:last-of-type)::after {
+    content: " \20AC";
+}
+
+#ticket-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+#ticket-price::after {
+    content: " \20AC";
+    font-weight: bold;
+    font-size: 20px;
+}
